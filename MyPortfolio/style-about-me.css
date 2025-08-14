@@ -1,0 +1,176 @@
+/* MEDIA OVERWRITE AND NEW SETTINGS */
+@media screen and (max-width: 950px) {
+    .main-title-large {
+        text-align: center;
+    }
+
+    .grid-system-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-system-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .small-card {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 510px) {
+    .max-width {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 950px) and (min-width: 377px) {
+    .main-title-large {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-system-4 {
+        grid-template-columns: 1fr;
+    }
+
+    .small-card {
+        height: auto;
+    }
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #C71585;
+    /* Dark pink */
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.grid-2-col,
+.grid-4-col {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-2-col {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-4-col {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #C71585;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.education-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-card h4 {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+
+.tag {
+    display: inline-block;
+    background-color: #C71585;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.hobby-card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1px;
+}
+
+.hobby-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.grid-3-col {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+}
+
+.image-card {
+    width: 100%;
+    height: 250px;
+    /* fixed height for uniformity */
+    border: 2px solid #C71585;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* fallback background */
+}
+
+.image-card:hover {
+    transform: scale(1.03);
+}
+
+.image-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* ensures full image fits without cropping */
+    display: block;
+}
+
+#projects
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.project-card {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+.project-card a {
+    color: #C71585;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+/* Container for About Me */
+.aboutme-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: #FFFFFF;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Title */
+.aboutme-section .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #C71585;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Decorative underline */
+.aboutme-section .title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #C71585;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Paragraph styling */
+.aboutme-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Highlight important words */
+.aboutme-section strong {
+    color: #C71585;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
